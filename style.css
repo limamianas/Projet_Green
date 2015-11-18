@@ -1,0 +1,1 @@
+body{padding-left:200px;font-family:serif;font-size:15pt}#menu{*position:absolute;position:fixed;top:20%;left:0;height:100%;width:10%;border:1px solid gray}#content{*position:absolute;position:fixed;top:20%;left:10%;height:100%;width:100%;border:1px solid gray}#top{*position:absolute;position:fixed;top:0;left:0;height:100%;width:100%;border:1px solid gray}#logo{width:6%}

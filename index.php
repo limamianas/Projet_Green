@@ -3,22 +3,13 @@ DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr-fr">
  
 <head>
-<link rel="stylesheet" type="text/css" href="templates/styles.css" type="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" type="screen" />
 </head>
  
 <body>
-<div id="header">
- <a href="form.html"> Ajouter de nouvelles photos</a><br>
- <?php
- include "config.php";
- include "database.fn.php";
- $link = database_connect($db);
- $dir = 'images/';
- 
- /**** on va chercher la boucle afin d'afficher la gallery*/
- include "gallery.php";
- 
- ?>
+<iframe id="top" name="top" src="toolbar.php"></iframe>
+<iframe id="menu" name="menu" src="navigation.php"></iframe>
+<iframe id="content" name="content" src="content.php"></iframe>
 </div>
 </body>
  

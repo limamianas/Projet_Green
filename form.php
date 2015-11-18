@@ -31,7 +31,7 @@
     </select>
     <br>Aide: 
     <br>1: Eflamm Vacances
-    <br>2: Eflamma Travail
+    <br>2: Eflamm Travail
     <br>3: Charifa Vacances
     <br>4: Charifa Travail
  	</span>

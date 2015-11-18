@@ -10,7 +10,7 @@
  {
  // on affiche les informations de l'enregistrement en cours
  echo "<div class='poney'>";
- echo '<h2><a title="'.$data['nom'].'" href="page.php?id='.$data['id_photo'].'">'.$data['nom'].'</a></h2>';
+ 
  echo "<img src='".$dir.$data['image']."'width=200 height=150/>";
  echo "<br> <br>";
  echo "</div>";
