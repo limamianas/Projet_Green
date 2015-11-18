@@ -1,4 +1,18 @@
 <?php
+
+/*start of caching*/
+$cache = 'cache/index.html';
+$expire = time() -3600 ; // available one hour
+
+if(file_exists($cache) && filemtime($cache) > $expire)
+{
+        readfile($cache);
+}
+else
+{
+ 
+ ob_start(); // opening the buffer
+
  // on crée la requête SQL : on va chercher id,nom,note,photo de la table "poni" et on les ordonne par note
  $sql = 'SELECT id_photo,nom,id_repertoire,image FROM photo' ;
  // on envoie la requête
@@ -19,4 +33,10 @@
  echo "<div class='spacer'></div>";
  echo "</div>";
  mysql_close($link);
+
+
+ $page = ob_get_contents(); // copying the content of the buffer in a string
+ ob_end_clean(); // flush and close the buffer
+
+}
  ?>
